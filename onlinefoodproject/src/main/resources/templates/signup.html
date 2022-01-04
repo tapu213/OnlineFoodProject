@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Sign up form</title>
+<link rel="stylesheet" href="@{/css/signup.css}">
+<style type="text/css">
+body, html {
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	/* The image used */
+	background-image: url('./images/signup.jpeg');
+	/* Full height */
+	height: 600px;
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.registration-form {
+	margin: auto;
+	width: 400px;
+	height: 500px;
+	margin-top: 150px;
+}
+</style>
+</head>
+<body>
+	<div class="image">
+		<div class="registration-form">
+
+			<h1>Registration Form</h1>
+			<form action="save" method="post">
+				<p>Full Name:</p>
+				<input type="text" name="fullname"
+					placeholder="enter your full name">
+				<p>User Name:</p>
+				<input type="text" name="username"
+					placeholder="enter your user name">
+				<p>Email:</p>
+				<input type="email" name="email" placeholder="enter your email">
+				<p>Password</p>
+				<input type="password" name="password"
+					placeholder="enter your password">
+					<p>Address</p>
+				<input type="password" name="address"
+					placeholder="enter your password">
+					<p>Phone</p>
+				<input type="password" name="password"
+					placeholder="enter your password">
+				<button type="submit">Sign Up</button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

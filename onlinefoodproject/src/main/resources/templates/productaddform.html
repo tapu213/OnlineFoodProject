@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+	crossorigin="anonymous">
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+	crossorigin="anonymous"></script>
+</head>
+<body>
+	<button type="button" class="btn btn-primary" data-bs-toggle="modal"
+		data-bs-target="#exampleModal">Add product</button>
+
+
+	<div class="modal fade" id="exampleModal" tabindex="-1"
+		aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+					<form action="productaddform" method="post">
+						<div>
+							<label for="exampleFormControlInput1" class="form-label">Category
+								Name</label> <input type="text" class="form-control"  name="category"
+								id="exampleFormControlInput1" placeholder="enter category name">
+						</div>
+						<div class="mb-3">
+							<label for="exampleFormControlInput1" class="form-label">Product
+								name</label> <input type="text" class="form-control"   name="name"
+								id="exampleFormControlInput1" placeholder="enter product name">
+						</div>
+						<div class="mb-3">
+							<label for="exampleFormControlInput1" class="form-label">Unit
+								Price</label> <input type="text" class="form-control"   name="price"
+								id="exampleFormControlInput1" placeholder="enter price">
+						</div>
+						<div class="mb-3">
+							<label for="formFile" class="form-label">Choose your
+								product</label> <input class="form-control"   name="photos" type="file" id="formFile">
+						</div>
+						<div class="mb-3">
+							<label for="exampleFormControlInput1" class="form-label">Stock</label> 
+							<input type="text" class="form-control"   name="stock"
+								id="exampleFormControlInput1" placeholder="enter price">
+						</div>
+						<form action="saveproduct">
+						<button type="submit" class="btn btn-secondary">Save</button>
+						</form>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
